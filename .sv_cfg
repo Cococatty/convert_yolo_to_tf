@@ -1,6 +1,7 @@
 [SCRIPTS]
+onnx-tf = conv
 
-[convert]
+[conv]
 prerequisites = 
 	pip==22.2.2
 	protobuf==3.19.4
@@ -10,49 +11,28 @@ prerequisites =
 	Pillow==9.2.0
 	urllib3==1.26.11
 	Werkzeug==2.2.1
-requirements =
-	# Base
+requirements = Pillow>=7.1.2
+	PyYAML>=5.3.1
+	coremltools>=4.1
 	matplotlib>=3.2.2
 	numpy>=1.18.5,<1.24.0
+	onnx-simplifier>=0.3.6
+	onnx-tf
+	onnx>=1.9.0
 	opencv-python>=4.1.1
-	Pillow>=7.1.2
-	PyYAML>=5.3.1
+	openvino-dev
+	pandas>=1.1.4
+	protobuf<4.21.3
+	psutil
 	requests>=2.23.0
+	scikit-learn
 	scipy>=1.4.1
+	seaborn>=0.11.0
+	tensorboard>=2.4.1
+	tensorflow>=2.4.1
+	tensorflowjs>=3.9.0
+	thop
 	torch>=1.7.0,!=1.12.0
 	torchvision>=0.8.1,!=0.13.0
 	tqdm>=4.41.0
-	protobuf<4.21.3
-	# Logging
-	tensorboard>=2.4.1
-	# wandb
-	# Plotting
-	pandas>=1.1.4
-	seaborn>=0.11.0
-	# Export
-	# CoreML export
-	coremltools>=4.1
-	# ONNX export
-	onnx>=1.9.0
-	# ONNX simplifier
-	onnx-simplifier>=0.3.6
-	# CoreML quantization ==0.19.2
-	scikit-learn
-	# TFLite export
-	tensorflow>=2.4.1
-	# TF.js export
-	tensorflowjs>=3.9.0
-	# OpenVINO export
-	openvino-dev
-	# system utilization
-	psutil
-	# FLOPs computation
-	thop
-	# albumentations>=1.0.3
-	# COCO mAP
-	# pycocotools>=2.0
-	# roboflow
-	onnx-tf
-	onnxruntime
-	onnxsim
-	tensorflow-probability
+
