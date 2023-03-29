@@ -1,5 +1,6 @@
 # venv dir
 .sv
-
 # fetchable resources
 yolov7
+# other
+outputs

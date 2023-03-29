@@ -1,0 +1,46 @@
+[SCRIPTS]
+
+[convert]
+prerequisites =
+	Pillow>=7.1.2
+	PyYAML>=5.3.1
+	requests>=2.23.0
+requirements =
+	# Base
+	matplotlib>=3.2.2
+	numpy>=1.18.5,<1.24.0
+	opencv-python>=4.1.1
+	scipy>=1.4.1
+	thop
+	torch>=1.7.0,!=1.12.0
+	torchvision>=0.8.1,!=0.13.0
+	tqdm>=4.41.0
+	protobuf<4.21.3
+	# Logging
+	tensorboard>=2.4.1
+	tensorflow-probability
+	# wandb
+	# Plotting
+	pandas>=1.1.4
+	seaborn>=0.11.0
+	# system utilization
+	psutil
+	# FLOPs computation
+	thop
+	# CoreML quantization ==0.19.2
+	scikit-learn
+	# Export
+	# CoreML export
+	coremltools>=4.1
+	# ONNX related
+	onnx>=1.9.0
+	onnx-simplifier>=0.3.6
+	onnx-tf
+	onnxruntime
+	onnxsim
+	# TFLite export
+	tensorflow>=2.4.1
+	# TF.js export
+	tensorflowjs>=3.9.0
+	# OpenVINO export
+	openvino-dev

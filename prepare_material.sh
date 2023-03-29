@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# # create virtual env
-# sv :create convert
+# create virtual env
+sv :create convert
 
-# # prepare YOLOv7
-# if [ ! -d "yolov7" ]
-# then
-# 	git clone https://github.com/WongKinYiu/yolov7.git
-# else
-# 	echo "yolov7 is NOT cloned as yolov7 directory already exists"
-# 	exit
-# fi
+# prepare YOLOv7
+if [ ! -d "yolov7" ]
+then
+	git clone https://github.com/WongKinYiu/yolov7.git
+else
+	echo "yolov7 is NOT cloned as yolov7 directory already exists"
+	exit
+fi
 
 mkdir -p outputs
 cd outputs
