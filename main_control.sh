@@ -18,7 +18,6 @@ Help()
 # Prepare Step
 Prepare()
 {
-	# step 1 fetch required objects
 	sh ./prepare_material.sh
 }
 
@@ -44,8 +43,6 @@ TFToTFLite()
 
 
 # Main program
-# while getopts ":he:" option; do
-	# case $option in
 while [ $# -gt 0 ]; do
 	case "$1" in
 		-h|--help) # display Help
